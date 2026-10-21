@@ -29,7 +29,7 @@ public abstract class NaturalSpawnerMixin {
             RandomSource random, BlockPos pos,
             CallbackInfoReturnable<Optional<MobSpawnSettings.SpawnerData>> cir
     ) {
-        if (category != MobCategory.MONSTER) return;
-        cir.setReturnValue(Optional.empty());
+        // Allow vanilla monster spawns again.
+        // Dead Sun's custom zombie spawning is handled separately.
     }
 }
